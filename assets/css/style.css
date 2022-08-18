@@ -6,14 +6,8 @@
  * copyright 2022 @codewithsadee 
  */
 
- #NonResponsiveWidth {
-	width: 1080px;
-    height: auto;
-}
-#responsiveWidth {
-	width: 85%;
-    height: auto;
-}
+
+
 
 
 /*-----------------------------------*\ 
@@ -1266,15 +1260,12 @@ footer .wrapper { text-align: center; }
   
   .progress-bar {
   width: 50rem;
-  height: 2rem;
-
   }
   }
   
   @media (max-width: 600px) {
   .section-1-heading {
   font-size: 3rem;
- 
   }
   
   .navbar-link {
@@ -1284,26 +1275,18 @@ footer .wrapper { text-align: center; }
   
   .section-2 {
   padding: 10rem;
-  
   }
   
   .section-2-heading {
   margin-bottom: 10rem;
-  
   }
   
   .progress-bar {
   width: 45rem;
-   height: 3rem;
-    background-color: rgb(8, 5, 5);
-    margin: 1.5rem 0;
-    border-radius: 0.3rem;
-    box-shadow: 0.2rem 0.2rem 1rem #555;
-    position: relative;
   }
   
   .project-img {
-  width: auto%;
+  width: 100%;
   }
   
   .contact-form {
