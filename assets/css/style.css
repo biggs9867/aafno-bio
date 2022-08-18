@@ -127,12 +127,22 @@ html {
   text-decoration: solid;
   min-height: 70%;
 }
-.card {
+.card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
   text-decoration: solid;
-  background-color: #83677b;
+  background-color: #f58fd8;
+  width: 100%;
 }
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  text-decoration: solid;
+  background-color: #f58fd8;
+  width: 50%;
+  
+}
+
 
 
 
@@ -938,7 +948,7 @@ footer .wrapper { text-align: center; }
     .progress-bar {
     width: 60rem;
     height: 3rem;
-    background-color: #ccc;
+    background-color: rgb(8, 5, 5);
     margin: 1.5rem 0;
     border-radius: 0.3rem;
     box-shadow: 0.2rem 0.2rem 1rem #555;
