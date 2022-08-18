@@ -219,6 +219,7 @@ html {
   margin-inline: auto;
   margin: auto; /* fallback for margin-inline */
   padding: 0 15px;
+  align-self: center;
 }
 
 .btn {
@@ -456,9 +457,10 @@ footer .wrapper { text-align: center; }
 
 .footer-text {
   color: var(--foreground-secondary);
-  max-width: 300px;
+  max-width: 200px;
   margin-inline: auto;
   margin: auto; /* fallback for margin-inline */
+  
 }
 
 .footer-title {
@@ -1153,12 +1155,15 @@ footer .wrapper { text-align: center; }
 
 
   
-  .contact { margin-bottom: 3rem; }
+  .contact { margin-bottom: 3rem;
+    padding: 0.6875rem 20rem; 
+  }
 
   .contact p {
     color: var(--foreground-secondary);
     margin-bottom: 1rem;
     justify-content: center;
+    
   }
 
   .social-link {
@@ -1195,6 +1200,7 @@ footer .wrapper { text-align: center; }
     top: 3rem;
     margin-bottom: 98px;
     align-content: center;
+    padding: 0.6875rem 20rem;
   }
 
   .newsletter p {
