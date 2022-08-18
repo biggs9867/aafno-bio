@@ -6,8 +6,14 @@
  * copyright 2022 @codewithsadee 
  */
 
-
-
+ #NonResponsiveWidth {
+	width: 1080px;
+    height: auto;
+}
+#responsiveWidth {
+	width: 85%;
+    height: auto;
+}
 
 
 /*-----------------------------------*\ 
@@ -131,7 +137,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
   text-decoration: solid;
-  background-color: #f58fd8;
+  background-color: #aaf965;
   width: 100%;
 }
 .card2 {
@@ -932,13 +938,13 @@ footer .wrapper { text-align: center; }
 
   .section-2 {
     width: 100%;
-    height: 100%;
+    height: 60%;
     padding: 15rem 0 10rem 0;
     background-color: #97caef;
     display: flex;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    
     }
     
     .progress-bars-wrapper {
@@ -1031,7 +1037,7 @@ footer .wrapper { text-align: center; }
        justify-content: center;
        align-items: center;
        margin: 1rem;
-       background-color: rgb(32, 106, 140);
+       background-color: rgb(219, 108, 202);
        display: flex;
        box-shadow: 0.3rem 0.3rem 0.5rem rgb(25, 24, 24);
        position: relative;
