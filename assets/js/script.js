@@ -82,10 +82,3 @@ for (let i = 0; i < themeBtn.length; i++) {
 
 }
 
-document.getElementById("myButton").onclick = function () {
-  location.href = "../contact.html";
-};
-
-
-
-
