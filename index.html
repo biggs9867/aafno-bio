@@ -197,25 +197,14 @@
     </div>
     
       
-        <div class="project">
-          
-          <div class="container">
-            <h2>Our Quality</h2>
-            <h1>✅ Why hire me</h1>
-           <a><h3>✔️ 100% Client Satisfaction Guarantee</h3></a>
-           <a><h3>✔️ Update of Work as I do</h3></a>
-           <a><h3>✔️ After-sale support.</h3></a>
-           <a><h3>✔️ On-Time Delivery</h3></a>
-
-          </div>
-        </div>
+        
       
       <!-- End of Section 1 -->
       
       <!-- Section 2 -->
       <section class="section-2" id="section-2">
         
-          
+        <h1 class="section-heading section-2-heading">About Me</h1>
           <div class="progress-bars-wrapper">
           <div class="progress-bar">
           <p class="progress-text">
@@ -261,45 +250,60 @@
           <div class="progress-percent"></div>
           </div>
           </div>
-          <h1 class="section-heading section-2-heading">About Me</h1>
-        
-          <div class="project">
-            <h3> I am a Computer Engineering graduate & Working with web design & development Since 2020, lover of everything code and design. I work to ensure you’re using technologies to their full capacity to generate new leads, increase revenue, and increase efficiency. I have already worked on many projects. Additionally I have learned many programming languages and I am very much willing to work in some reputed companies and many other different projects. I attended many hour coding bootcamp to learn new languages while sharpening existing skills.>
-            </h3> 
-           </div>
-        
-          <div class="project">
-            <ul>
-            <div>   <a> <h2>⭐Services I can provide you:</h2></a>  </div>
-           <h3> <li><a>✔️ Full responsive website</a></li>
-            <li><a>✔️ Personalized custom landing page
-            </a></li>
-            <li><a>✔️ Gallery, Animations & Transitions in WordPress Website
-            </a></li>
-            <li><a>✔️ High-converting & eye-catchy elementor landing Page
-            </a></li>
-            <li><a>✔️ Complete Online Store Functionality. Add to cart to Checkout
-            </a></li>
-            <li><a>✔️ Setup shipping methods and payment gateways
-            </a></li>
-            <li><a>✔️ Subscription Popup with Mailchimp integration</a></li>
-            <li><a>✔️ Facebook Pixel setup</a></li>
-            <li><a>✔️ Social share & Live Chat Intregration</a></li>
-            <li><a>✔️ Excellent landing page for one product store</a></li>
-            <li><a>✔️Clean & Modern WordPress Website Design</a></li>
-            
-            <li><a>✔️ Domain integration for your Website</a></li>
-            <li><a>✔️ Website Speed Optimization</a></li>
-            <li><a>✔️ And Many More</a></li> </h3>
-            </ul>
-            
-            
-          </div>
-           
-          
-          
-            
         </section>
+        
+          <div class="service">
+            <div class="title">
+              <h2>Our Services</h2>
+            </div>
+        
+            <div class="box">
+              <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                  <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+        
+                  <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        
+              <div class="card">
+                <i class="far fa-user"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                  <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+        
+                  <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+        
+              <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                  <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+        
+                  <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          <div class="contact-me">
+            <p>Let Me Get You A Beautiful Website.</p>
+            <a class="button-two" href="#">Hire Me</a>
+          </div>
+        
+            
+        
 
           <section class="section-3" id="section-3">
             <h1 class="section-heading section-3-heading">My Projects</h1>
@@ -398,22 +402,22 @@
             <!-- Section 4 -->
             
             <div class="container5" id="section-4">
-              <form action="javascript:sendEmail()" method="post">               
+              <form id="contactForm" method="post">               
                         <h2>Contact Me</h2>
                 
                       <div class="inputBox">
-                        <input type="text"  name="Name" id="Name" placeholder="Name" required="">
+                        <input type="text"  name="Name" id="name" placeholder="Name" required="">
                       </div>
                       <div class="inputBox">
-                        <input type="email"  name="Sender" id="Sender" placeholder="Email"
+                        <input type="email"  name="Sender" id="email" placeholder="Email"
                           required="">
                       </div>
                       <div class="inputBox">
-                        <input type="text"  name="Phone" id="Phone" placeholder="Phone"
+                        <input type="text"  name="Phone" id="phone" placeholder="Phone"
                           required="">
                       </div>
                       <div class="inputBox">
-                      <textarea name="Message"  id="Message" placeholder="Message"
+                      <textarea name="Message"  id="message" placeholder="Message"
                         required=""></textarea>
                       </div>
                         <div class="inputBox">
@@ -579,49 +583,76 @@
  
 
 
- 
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB-p0OMESYUqhWn5z5cUMoQK5zwaEFWAzs",
+    authDomain: "my-bio-8718c.firebaseapp.com",
+    projectId: "my-bio-8718c",
+    storageBucket: "my-bio-8718c.appspot.com",
+    messagingSenderId: "466312774435",
+    appId: "1:466312774435:web:8664370b8e76a55c024296"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+e.preventDefault();
+
+//Get value
+var name = getInputVal('name');
+var email = getInputVal('email');
+var phone = getInputVal('phone');
+var message = getInputVal('message');
+
+// Save message
+saveMessage(name, email, phone, message);
+
+// Show alert
+document.querySelector('.alert').style.display = 'block';
+
+// Hide alert after 3 seconds
+setTimeout(function(){
+  document.querySelector('.alert').style.display = 'none';
+},3000);
+
+// Clear form
+document.getElementById('contactForm').reset();
+}
+
+// Function to get form value
+function getInputVal(id){
+return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name,  email, phone, message){
+var newMessageRef = messagesRef.push();
+newMessageRef.set({
+  name: name,
+  email: email,
+  phone: phone,
+  message: message
+});
+}
+
+</script>
 
   
  
-  <script src="./assets/js/script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-  <script>
-    function sendEmail(){ 
-      let name = document.getElementById("Name").value;
-    let email = document.getElementById("Sender").value;
-    let message = document.getElementById("Message").value;
-    let phone = document.getElementById("Phone").value;
-    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
-
-			// var body = $('#body').val();
-
-			
-    Email.send({
-    SecureToken:"0d4426c4-0f50-405d-a861-f0a5e49bc3b7",
-    Host : "smtp.gmail.com",
-    Username : "bigyan.neupane07@gmail.com",
-    Password : "Qwater123",
-    To : 'bigyan.neupane07@gmail.com',
-    From : document.getElementById('Sender'),
-    Subject : "new user",
-    Body : finalmessage
-}).then(
-  message =>{
-					//console.log (message);
-					if(message=='OK'){
-					alert('Your mail has been send. Thank you for connecting.');
-					}
-					else{
-						console.error (message);
-						alert('There is error at sending message. ')
-						
-					}
-
-				}
-			)
-    }
-    </script>
+<script src="./assets/js/script.js"></script>
+  
   
   <!--
     - ionicon link

@@ -133,7 +133,7 @@ html {
   text-decoration: solid;
   background-color: #aaf965;
   width: 100%;
-  padding: 1rem 0 10rem 0;
+  
 }
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -141,7 +141,7 @@ html {
   text-decoration: solid;
   background-color: #f5eef3;
   width: 50%;
-  padding: 1rem 0 10rem 0;
+  
   
 }
 
@@ -1198,7 +1198,7 @@ footer .wrapper { text-align: center; }
 
       
        .section-4-heading {
-        color: #fff;
+        color: rgb(188, 41, 41);
         box-shadow: none;
         border-color: #fff;
         margin-bottom: 5rem;
@@ -1352,16 +1352,32 @@ footer .wrapper { text-align: center; }
   @media (max-width: 800px) {
   .section-1-heading {
   font-size: 4rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   }
   
+  .project-img {
+    width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+    
   .progress-bar {
   width: 50rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   }
   }
   
   @media (max-width: 600px) {
   .section-1-heading {
   font-size: 3rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   }
   
   .navbar-link {
@@ -1380,10 +1396,16 @@ footer .wrapper { text-align: center; }
   
   .progress-bar {
   width: 45rem;
+  width: 100%;
+  height: auto;
+  
   }
   
   .project-img {
   width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   }
   
   .contact-form {
@@ -1426,3 +1448,99 @@ footer .wrapper { text-align: center; }
 
 
   
+
+
+  .service{
+	
+	width: 100%;
+	padding: 100px 0px;
+  }
+  .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #f5c0c0;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+  
+  }
+  h5{
+    color: rgb(95, 6, 6);
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p{
+    color: rgba(138, 25, 138, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .card .button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .contact-me{
+    width: 100%;
+    height: 290px;
+    background-color: #f5c0c0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-me p{
+    color: rgb(28, 13, 13);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .contact-me .button-two{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  .contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
